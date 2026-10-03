@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card { @apply rounded-xl border border-grafite-200 bg-white shadow-sm dark:border-grafite-800 dark:bg-grafite-900; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-obra-500 disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primary { @apply btn bg-obra-500 text-grafite-900 hover:bg-obra-400; }
+  .btn-secondary { @apply btn border border-grafite-300 bg-white text-grafite-700 hover:bg-grafite-100 dark:border-grafite-700 dark:bg-grafite-800 dark:text-grafite-100 dark:hover:bg-grafite-700; }
+  .btn-danger { @apply btn bg-red-600 text-white hover:bg-red-500; }
+  .btn-icon { @apply inline-flex h-9 w-9 items-center justify-center rounded-lg text-grafite-500 hover:bg-grafite-100 hover:text-grafite-900 dark:text-grafite-400 dark:hover:bg-grafite-800 dark:hover:text-white; }
+  .input { @apply w-full rounded-lg border border-grafite-300 bg-white px-3 py-2.5 text-sm text-grafite-900 placeholder-grafite-400 focus:border-obra-500 focus:outline-none focus:ring-2 focus:ring-obra-500/30 dark:border-grafite-700 dark:bg-grafite-800 dark:text-white; }
+  .label { @apply mb-1 block text-sm font-medium text-grafite-700 dark:text-grafite-300; }
+  .th { @apply px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-grafite-500 dark:text-grafite-400; }
+  .td { @apply px-4 py-3 text-sm text-grafite-700 dark:text-grafite-200; }
+}
